@@ -48,4 +48,9 @@ public class Account {
 	public void withdraw(Double amount) {
 		balance -= amount;
 	}
+	
+	@Override
+	public String toString() {
+		return "New Balance:  $" + String.format("%.2f", balance);
+	}
 }
